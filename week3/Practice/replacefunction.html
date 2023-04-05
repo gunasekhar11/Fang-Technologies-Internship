@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body style="text-align: center;">
+
+<p>Do you want to replace the company name with your company :</p>
+<input type="text" name="" id="name">
+<br><br>
+<button onclick="myFunction()">Replace</button>
+
+<p id="demo">Please visit Microsoft!</p>
+
+<script>
+var temp = "Microsoft";
+function myFunction() {
+  var name = document.getElementById("name").value;
+  var text = document.getElementById("demo").innerHTML;
+  document.getElementById("demo").innerHTML = text.replace(temp,name);
+  temp = name ;
+}
+</script>
+
+</body>
+</html>
+
+

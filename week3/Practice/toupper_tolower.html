@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Conversion Of Given String To Upper And Lower Cases Or Normal</h1>
+
+<input type="text" id="demo">
+
+<button onclick="toUpper()">Upper</button>
+<button onclick="toLower()">Lower</button>
+<button onclick="toNormal()">Normal</button>
+<p id="result"></p>
+
+<script>
+let temp = document.getElementById("demo").value;
+function toUpper() {
+  let text = document.getElementById("demo").value;
+  document.getElementById("demo").value = text.toUpperCase();
+}
+function toLower() {
+  let text = document.getElementById("demo").value;
+  document.getElementById("demo").value = text.toLowerCase();
+}
+function toNormal() {
+  let text = document.getElementById("demo").value;
+  document.getElementById("demo").value = temp;
+}
+</script>
+
+</body>
+</html>

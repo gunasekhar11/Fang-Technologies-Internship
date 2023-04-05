@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript if .. else</h2>
+
+<p>Enter Your Age :</p>
+<input type="number" id="number">
+<input type="button" value="submit" onclick="vote()">
+<p id="demo"></p>
+
+<script>
+function vote(){
+    x = document.getElementById("number").value;
+    if (x < 18) {
+        document.getElementById("demo").innerHTML = "He Is Not Eligible For Voting";
+    }else {
+        document.getElementById("demo").innerHTML = "He Is Eligible For Voting";
+    }
+}
+</script>
+
+</body>
+</html>
